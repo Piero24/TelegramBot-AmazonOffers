@@ -1,22 +1,3 @@
-# TODO
-- Fix all the todo in the code
-- Check the log and change some of them to be more clear.
-- Fix the webpage.
-
-## FOR GITHUB
-- Change the code database for store only asin because you can't store info
-- For the github version send directly the image without storing it on the internet or the link of the image returned from the request.
-- Change the background image of the message
-- Remove the extra codes
-- complete the readme
-
-- Functions to remove or modify before the release:
-    - `add_brand_counter()`: count the number of time a brand is present in the message
-    - Simplify the title function just to don't have the same title as other people
-
-## OTHER
-
-
 <!--TelegramBot-AmazonOffers-->
 <!--TelegramBot AmazonOffers-->
 <!--**RELEASED-DATA**-->
