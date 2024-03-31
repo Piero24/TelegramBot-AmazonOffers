@@ -53,6 +53,12 @@
 
 ---
 
+<h3 align="center">
+    📌 NOTE 📌 
+</h3>
+<p align="center">
+    The images in this readme are the result of further customization of this bot. In fact, as explained below, it is possible to customize various aspects of the product such as the image or title but this depends a lot on the result you want to obtain. For example, to personalize images, the use of an image storage system is required. However, the default version is more than sufficient to use the bot fully.
+</p>
 
 <br/><br/>
 <h2 id="itroduction">📔  Itroduction</h2>
@@ -118,10 +124,11 @@
     This project is entirely written in <strong>Python</strong> and uses the <strong>Amazon Product Advertising API</strong> for the search of the products and the <strong>Telegram API</strong> to send the message. It use <strong>SQLite</strong> only for the part of the ASIN storage. There is also a part written in <strong>html</strong> and <strong>css</strong> for a web page to advice if the bot is still online and that provide a direct link to al the channels connected to the bot.
 </p>
 <br/>
-<a href="https://www.python.org">Python</a> • <a href="https://www.sqlite.org">SQLite</a> • <a href="">HTML</a> • <a href="">CSS</a> • <a href="https://getbootstrap.com">BootStrap</a> • <a href="https://webservices.amazon.com/paapi5">Amazon PAAPI</a> • <a href="https://github.com/eternnoir/pyTelegramBotAPI">Telegram API</a>
+<p align="center">
+    <a href="https://www.python.org">Python</a> • <a href="https://www.sqlite.org">SQLite</a> • <a href="">HTML</a> • <a href="">CSS</a> • <a href="https://getbootstrap.com">BootStrap</a> • <a href="https://webservices.amazon.com/paapi5">Amazon PAAPI</a> • <a href="https://github.com/eternnoir/pyTelegramBotAPI">Telegram API</a>
+</p>
 
 <p align="right"><a href="#top">⇧</a></p>
-
 
 <h2 id="index"><br/>📋  Index</h2>
 <ul>
@@ -153,7 +160,11 @@ There is two way to run the project:
 1. With <a href="https://www.docker.com">Docker</a>
 2. With the classic environment 
 
-If you want to use the Docker you can skip this part and go to the next section. For the classic installation instead you need to install the required package. You can Install all the requirement in one shot by using the following command:
+If you want to use Docker you can skip this part and go to the next section. For the classic installation instead you need to install the required package. Start by creating the enviroment `env`.
+```sh
+    python3 -m venv env
+```
+You can Install all the requirement in one shot by using the following command:
 
 ```sh
     pip install -r requirements.txt
@@ -175,14 +186,14 @@ Alternatively you can install it one by one the package in the requirements.txt 
     ```
 
 2. Setup the `api_Keys.py` file with all the required from Amazon and Telegram.
-    You can find an example <a href=".github/api_Keys_Setup.md">here</a>.
+    You can find an example <a href="https://github.com/Piero24/TelegramBot-AmazonOffers/blob/main/.github/api_Keys_Setup.md">here</a>.
 
 3. Setup the `settings.py` file with all the required for running the bot.
-    You can find an example <a href=".github/settings.md">here</a>.
+    You can find an example <a href="https://github.com/Piero24/TelegramBot-AmazonOffers/blob/main/.github/settings.md">here</a>.
 
-4. Setup the `category_keywords.py` file with the categories and the keywords for the search. More information <a href=".github/categories_list.md">here</a>.
+4. Setup the `category_keywords.py` file with the categories and the keywords for the search. More information <a href="https://github.com/Piero24/TelegramBot-AmazonOffers/blob/main/.github/categories_list.md">here</a>.
 
-5. <strong>Facultative</strong>: There are many other parameters that can be changed. <a href=".github/other_parameters.md">Here</a> you can find more information about what you can do and where you can find it.
+5. <strong>Facultative</strong>: There are many other parameters that can be changed. <a href="https://github.com/Piero24/TelegramBot-AmazonOffers/blob/main/.github/other_parameters.md">Here</a> you can find more information about what you can do and where you can find it.
 
 <br/>
 <h4 align="center">
