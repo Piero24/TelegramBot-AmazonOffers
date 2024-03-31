@@ -1,6 +1,6 @@
 <!--TelegramBot-AmazonOffers-->
 <!--TelegramBot AmazonOffers-->
-<!--**RELEASED-DATA**-->
+<!--Jan 2024-->
 
 <div id="top"></div>
 <br/>
@@ -259,7 +259,7 @@ For any problem you can check the log file in the `log` folder.
     It is possible to have more information by viewing the following links: 
     <a href="#code-of-conduct"><strong>Code of conduct</strong></a>
      • 
-    <a href="#license"><strong>License</strong></a>
+    <a href="https://github.com/Piero24/TelegramBot-AmazonOffers/blob/main/LICENSE"><strong>License</strong></a>
 </p>
 
 <p align="right"><a href="#top">⇧</a></p>
@@ -289,19 +289,17 @@ For any problem you can check the log file in the `log` folder.
  --- 
 
 <h2 id="license"><br/>🔍  License</h2>
-<strong>GNU GENERAL PUBLIC LICENSE</strong>
+<strong>APACHE LICENSE</strong>
 <br/>
-<i>Version 3, 29 June 2007</i>
-<br/>
-<br/>
-<i>Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/> Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.</i>
+<i>Version 2.0, Jan 2004</i>
 <br/>
 <br/>
-<i>Preamble</i>
+<i>"License" shall mean the terms and conditions for use, reproduction, and distribution as defined by Sections 1 through 9 of this document.
 <br/>
-<i>The GNU General Public License is a free, copyleft license for software and other kinds of works.</i>
 <br/>
-<a href="https://github.com/Piero24/Template-README/blob/main/LICENSE"><strong>License Documentation »</strong></a>
+"Licensor" shall mean the copyright owner or entity authorized by the copyright owner that is granting the License... </i>
+<br/>
+<a href="https://github.com/Piero24/TelegramBot-AmazonOffers/blob/main/LICENSE"><strong>License Documentation »</strong></a>
 <br/>
 <br/>
 
@@ -328,10 +326,22 @@ the individual licenses are indicated in the following section.
     <td>GPL-2.0 license</td>
     <td><a href="https://github.com/eternnoir/pyTelegramBotAPI">here</a></td>
   </tr>
+  <tr  align="center">
+    <td>flag</td>
+    <td>cvzi</td> 
+    <td>MIT License</td>
+    <td><a href="https://github.com/cvzi/flag?tab=MIT-1-ov-file">here</a></td>
+  </tr>
+  <tr  align="center">
+    <td>python-holidays</td>
+    <td>vacanza</td> 
+    <td>MIT License</td>
+    <td><a href="https://github.com/vacanza/python-holidays/">here</a></td>
+  </tr>
 </table>
 
 <p align="right"><a href="#top">⇧</a></p>
 
 
 ---
-> *<p align="center"> Copyrright (C) by Pietrobon Andrea <br/> Released date: **RELEASED-DATA***
+> *<p align="center"> Copyrright (C) by Pietrobon Andrea <br/> Released date: Jan 2024*
