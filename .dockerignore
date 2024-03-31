@@ -1,0 +1,12 @@
+# .dockerignore
+
+# Exclude files and directories
+
+.DS_Store
+database/
+log/
+psd
+cover.psb
+.vscode/
+.github/
+archive/

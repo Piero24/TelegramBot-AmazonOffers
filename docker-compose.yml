@@ -1,0 +1,90 @@
+# Name of the WebOfferte application
+name: telegram-bot-amazonoffers
+version: '1.0'
+
+# Service definitions for the WebOfferte application
+services:
+  # Service name: app
+  # The `app` service definition
+  app:
+    # Name of the container
+    container_name: TelegramBot-AmazonOffers
+
+    # Image to be used for the container
+    image: ACCOUNT-NAME/TelegramBot-AmazonOffers:latest
+
+    # Container restart policy
+    restart: unless-stopped
+
+    environment:
+
+      - PUID=1000
+
+      - PGID=1000
+
+      - TZ=Europe/Rome
+
+    # Volumes to be mounted to the container
+    volumes:
+      # Mounting the local WebOfferte/database directory to /TelegramBot-AmazonOffers/database inside the container
+      - /DATA/AppData/$AppID/database:/TelegramBot-AmazonOffers/database
+
+      # Mounting the local WebOfferte/log directory to /TelegramBot-AmazonOffers/log inside the container
+      - /DATA/AppData/$AppID/log:/TelegramBot-AmazonOffers/log
+      
+      # Mounting the local WebOfferte/archive directory to /TelegramBot-AmazonOffers/archive inside the container
+      - /DATA/AppData/$AppID/archive:/TelegramBot-AmazonOffers/archive
+
+    # Ports mapping between host and container
+    ports:
+      # Mapping port 8123 of the host to port 8000 of the container
+      - "8223:8000"
+
+    x-casaos: # CasaOS specific configuration
+      volumes:
+        - container: /TelegramBot-AmazonOffers/database
+          description:
+            en_us: "Container Path: /TelegramBot-AmazonOffers/database"
+        - container: /TelegramBot-AmazonOffers/log
+          description:
+            en_us: "Container Path: /TelegramBot-AmazonOffers/log"
+        - container: /TelegramBot-AmazonOffers/media
+          description:
+            en_us: "Container Path: /TelegramBot-AmazonOffers/media"
+        - container: /TelegramBot-AmazonOffers/archive
+          description:
+            en_us: "Container Path: /TelegramBot-AmazonOffers/archive"
+      ports:
+        - container: "8000"
+          description:
+            en_us: "Container Port: 8000"
+
+# CasaOS specific configuration
+x-casaos:
+  # Supported CPU architectures for the application
+  architectures:
+    - amd64
+    - arm64
+  # Main service of the application
+  main: app
+  description:
+    # Description in English
+    en_us: TelegramBot-AmazonOffers is a Telegram bot that sends you the best Amazon offers.
+  tagline:
+    # Short description or tagline in English
+    en_us: TelegramBot-AmazonOffers
+  # Developer's name or identifier
+  developer: "Andrea Pietrobon"
+  # Author of this configuration
+  author: Andrea Pietrobon
+  # Icon for the application
+  icon: https://raw.githubusercontent.com/Piero24/Piero24/main/icon/WbOff-Logo-Tech.png
+  # Thumbnail image (currently empty)
+  thumbnail: ""
+  title:
+    # Title in English
+    en_us: WTelegramBot-AmazonOffers
+  # Application category
+  category: TelegramBot
+  # Port mapping information
+  port_map: "8223"
