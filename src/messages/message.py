@@ -636,7 +636,7 @@ class Message:
 
             for i in description_list:
                 split_list = i.split(',')
-                
+
                 if len(split_list[0]) < 75:
                     returned_list.extend(split_list[0].capitalize())
 
@@ -697,7 +697,7 @@ class Message:
             new_img_upload_response = image_gen.upload_img(asin, url)
             
         os.remove(f"archive/tmp/{asin}.jpg")
-        # os.remove(f"archive/img/{asin}-1.jpg")
+        os.remove(f"archive/img/{asin}-1.jpg")
         return new_img_upload_response[1]
 
     @staticmethod

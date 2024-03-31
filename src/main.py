@@ -33,20 +33,15 @@ bot = telebot.TeleBot(api_keys.TELEGRAM_TOKEN)
 
 if __name__ == "__main__":
 
-    # activity_inspector.run_server_thread()
-    # while True:
-    try:
-        while True: bot_starter.start(bot)
-        
-    except ConnectionError:
-        logging.error('Internet connection error. Retry in 20 minutes.')
-        time.sleep(1200)
-        
-    except Exception as e:
-        logging.critical(f'Error during bot execution: {type(e)} - {e}')
+    activity_inspector.run_server_thread()
 
-"""
-# os.remove(f"archive/img/{asin}-1.jpg")
-RIGA 696 message.py
-
-"""
+    while True:
+        try:
+            bot_starter.start(bot)
+            
+        except ConnectionError:
+            logging.error('Internet connection error. Retry in 20 minutes.')
+            time.sleep(1200)
+            
+        except Exception as e:
+            logging.critical(f'Error during bot execution: {type(e)} - {e}')

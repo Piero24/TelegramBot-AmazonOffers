@@ -45,9 +45,8 @@ def start(bot: telebot.TeleBot) -> None:
     Args:
         bot (telebot.TeleBot): The Telegram bot object.
     """
-    # if ((time_scheduler.is_active()) and (time_scheduler.is_not_sunday()) and 
-    #     (not time_scheduler.is_during_holidays(settings.COUNTRY))):
-    if True:
+    if ((time_scheduler.is_active()) and (time_scheduler.is_not_sunday()) and 
+        (not time_scheduler.is_during_holidays(settings.COUNTRY))):
         valid_offers_list = list_manager.extraction_raw_products()
         products_list = []
 
@@ -76,8 +75,8 @@ def start(bot: telebot.TeleBot) -> None:
             
             database_builder.correctly_added(asin_sended_list)
 
-            # time_scheduler.waiting_next_iteration()
-            time.sleep(60*15)
+            time_scheduler.waiting_next_iteration()
+            # time.sleep(60*15)
         logging.info("Iteration completed.")
     
     else:
