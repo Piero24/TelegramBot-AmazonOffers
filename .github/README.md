@@ -97,26 +97,12 @@
 <br/>
 <br/>
 
-<h3 align="center">
-     ⚠️ ATTENTION ⚠️ 
-</h3>
-<p align="center">
-    Since I hanven't an account from another country I didn't test the bot in the different reagions like UK, US, ESP, FR and so on. So I can't guarantee the bot will work in all the regions. But You can fix the problem in a couple of steps. Or you can report the problem here: <a href="https://github.com/Piero24/TelegramBot-AmazonOffers/issues"></a><strong>Report Bug</strong></a> And I will fix it as soon as I wind an API Key for the tests.
-</p>
-<p align="center">
-    To use this bot you need to have an Amazon account and an API key. You can require your API key <a href="https://programma-affiliazione.amazon.it/home"><strong>here</strong></a>. 
-</p>
-<p align="center">
-    No responsibility is assumed for the use of the bot and the data it provides. The use of it at your own risk.
-    To check the Amazon regulation about the PAAPI see the <a href="https://webservices.amazon.com/paapi5/documentation/best-programming-practices.html"><strong>PAAPI Documentation</strong></a> section.
-</p>
-<p align="center">
-    The storage of any information returned by the PAAPI is <strong>NOT PERMITTED</strong>. To this reason it's difficult to know the difference between price of a product already send and the same product in the queue or other comparation. As mentioned here basically all the information returned by the PAAPI must be cancelled in a couple of hours (se <a href="https://webservices.amazon.com/paapi5/documentation/best-programming-practices.html#how-to-cache">here</a> for more information). But the only data that is not mentioned so che can assume it is possibile to store is the product ASIN. This is used <strong>ONLY</strong> for preventing to send the same product more times in a certain period.
-</p>
-<p align="center">
-    If you wan't to support the project subscribe to one of the channel at this link: <a href="https://linktr.ee/webofferte"><strong>WebOfferte</strong></a>
-</p>
-<br/>
+> [!IMPORTANT]  
+> 1. Since I haven't an account from another country I didn't test the bot in the different regions like UK, US, ESP, FR and so on. So I can't guarantee the bot will work in all the regions. But You can fix the problem in a couple of steps. Or you can report the problem here: [**Report Bug**](https://github.com/Piero24/TelegramBot-AmazonOffers/issues) And I will fix it as soon as I wind an API Key for the tests.
+> 2. No responsibility is assumed for the use of the bot and the data it provides. The use of it at your own risk. To check the Amazon regulation about the PAAPI see the [PAAPI Documentation](https://webservices.amazon.com/paapi5/documentation/best-programming-practices.html) section.
+> 3. To use this bot you need to have an Amazon account and an API key. You can require your API key [here](https://programma-affiliazione.amazon.it/home).
+> 4. The storage of any information returned by the PAAPI is **NOT PERMITTED**. To this reason it's difficult to know the difference between price of a product already send and the same product in the queue or other comparison. As mentioned here basically all the information returned by the PAAPI must be cancelled in a couple of hours (see [here](https://webservices.amazon.com/paapi5/documentation/best-programming-practices.html#how-to-cache) for more information). But the only data that is not mentioned so can assume it is possible to store is the product ASIN. This is used **ONLY** for preventing to send the same product more times in a certain period.
+> 5. If you want to support the project subscribe to one of the channel at this link: [WebOfferte](https://linktr.ee/webofferte)
 
 
 <h2 id="made-in"><br/>🛠  Built in</h2>
