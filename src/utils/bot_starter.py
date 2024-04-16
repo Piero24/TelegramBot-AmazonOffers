@@ -74,9 +74,8 @@ def start(bot: telebot.TeleBot) -> None:
                     asin_sended_list.append(asin)
             
             database_builder.correctly_added(asin_sended_list)
-
             time_scheduler.waiting_next_iteration()
-            # time.sleep(60*15)
+
         logging.info("Iteration completed.")
     
     else:

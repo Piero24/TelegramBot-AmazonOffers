@@ -636,12 +636,17 @@ class Message:
 
             for i in description_list:
                 split_list = i.split(',')
-
+                
                 if len(split_list[0]) < 75:
                     returned_list.extend(split_list[0].capitalize())
 
         # Capitalize and filter final bullet points
         final_list = [i.capitalize() for i in returned_list if len(i) >= 15]
+
+        extra_phrase = add_extra_phrase(asin, brand, discount_percentage)
+        
+        if extra_phrase is not None:
+            final_list.append(extra_phrase)
 
         return final_list[:MAX_BULLET_POINTS]
 
@@ -878,3 +883,39 @@ def currency_code_to_symbol(currency_code: str) -> str:
         # Add more currency code to symbol mappings as needed
         }
     return symbols.get(currency_code, currency_code)
+
+def add_extra_phrase(
+        asin: str, 
+        brand: str, 
+        discount_percentage: int
+    ) -> Union[str, None]:
+    """
+    """
+    if discount_percentage is None:
+        return None
+
+    mix_list = mix_phrase_list.copy()
+
+    try: 
+        if discount_percentage > 65:
+            mix_list.extend(discount_65_more)
+
+        elif discount_percentage > 35:
+            mix_list.extend(discount_35_more)
+
+        gen_bullet = random.choice(mix_list)
+
+        if "*BRAND*" in gen_bullet:
+            gen_bullet = gen_bullet.replace("*BRAND*", brand)
+            
+        if "*PERCENTAGE*" in gen_bullet:
+            str_discount_percentage = str(discount_percentage)
+            gen_bullet = gen_bullet.replace("*PERCENTAGE*", 
+                                            str_discount_percentage)
+    
+    except Exception as e:
+        logging.error(f"An error occurred while generating the extra phrase "
+                      f"for the product with asin {asin}: {e}")
+        return None
+    
+    return gen_bullet

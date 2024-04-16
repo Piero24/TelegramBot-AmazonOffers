@@ -66,7 +66,7 @@ def sub_of_raw_products(
     cts_dict_list = [cp_cts_1, cp_cts_2, cp_cts_3]
     len_cts_dict_list = len(cts_dict_list)
 
-    split_number_list = functions_toolbox.split_number(6, 15)
+    split_number_list = functions_toolbox.split_number(8, 15)
 
     for j in range(len_cts_dict_list):
 

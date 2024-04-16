@@ -32,7 +32,6 @@ logger = logging.getLogger(__name__)
 bot = telebot.TeleBot(api_keys.TELEGRAM_TOKEN)
 
 if __name__ == "__main__":
-
     activity_inspector.run_server_thread()
 
     while True:
