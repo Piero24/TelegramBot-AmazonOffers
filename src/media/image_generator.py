@@ -113,6 +113,18 @@ def gen_img(
                              'Poppins', 
                              'Poppins-Bold.ttf')
 
+    #! Windows compatibility Fix as soon as possible
+    import platform
+    # Check if the platform is Windows
+    if platform.system() == "Windows":
+        font_path = "src/media/font/Poppins/Poppins-Bold.ttf"
+        currency = "E"
+        old_currency = "E"
+
+    # Attempt to draw text sizes
+    w1, h1 = draw.textsize(f"{old_price}{old_currency}", font=font1)
+    w2, h2 = draw.textsize(f"{new_price}{currency}", font=font2)
+
     # Choose the font and size for the 2 texts
     font1 = ImageFont.truetype(font_path, 70)
     font2 = ImageFont.truetype(font_path, 180)
