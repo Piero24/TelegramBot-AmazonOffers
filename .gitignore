@@ -169,3 +169,5 @@ cover.psb
 .vscode/
 archive
 todo.md
+pp.py
+tx.log
