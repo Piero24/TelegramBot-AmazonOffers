@@ -1,4 +1,7 @@
 # Parameters Setup
+The first step is to rename the file `settings_template.py` into `settings.py`. Then insert in the file all the required keys.
+The required paramenters are:
+
 These are some of the parameters that you can set to customize the bot.
 
 
