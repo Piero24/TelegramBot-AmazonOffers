@@ -164,6 +164,7 @@ def gen_img(
 
     # Save the new image asin-1.jpg
     back_im.save(f'archive/img/{asin}-1.jpg', quality=95)
+    return f'archive/img/{asin}-1.jpg'
 
 def upload_img(asin: str, original_img_url: str, storage_key: str = "") -> list:
     """Uploads an image to the website for the storage and 
