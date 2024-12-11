@@ -61,7 +61,7 @@
 </p>
 
 <br/><br/>
-<h2 id="itroduction">📔  Itroduction</h2>
+<h2 id="introduction">📔  Introduction</h2>
 <p>
     This bot is designed to send offers from Amazon to a Telegram channel. By providing different keywords, the bot will search for the best offers and return a series of products with the relative information. Then the information are parsed for extract only relevant information like:
     <ul>
