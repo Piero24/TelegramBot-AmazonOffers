@@ -33,6 +33,8 @@ MAX_DAYS_TO_CHECK = 3
 # Server port number
 PORT = 8000
 
+HIGH_QUALITY_IMAGE = True
+
 #################################### DEBUG ####################################
 # 0 = Shoert list, 1 = Full random list
 SUBSET_MODE = 1

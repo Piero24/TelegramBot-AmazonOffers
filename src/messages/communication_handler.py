@@ -17,7 +17,7 @@ import logging
 
 # Imported modules
 from utils.product import Product
-from configs import api_keys
+from configs import api_keys, settings
 from messages.message import Message
 from utils.log_manager import setup_logger
 
@@ -37,6 +37,7 @@ def single_message(bot: telebot.TeleBot, product: Product) -> bool:
     """
     PARTNER_TAG = api_keys.PARTNER_TAG
     CHANNEL_ID = api_keys.CHANNEL_ID
+    HIGH_QUALITY_IMAGE = settings.HIGH_QUALITY_IMAGE
 
     try:
         mess = Message.from_product(product, PARTNER_TAG)
@@ -63,7 +64,16 @@ def single_message(bot: telebot.TeleBot, product: Product) -> bool:
                           f"object for the asin {product.asin}: {e}")
             return False
 
-    try:    
+    try:
+        # if HIGH_QUALITY_IMAGE:
+        #     img = open('/tmp/photo.png', 'rb')
+        #     bot.send_photo(CHANNEL_ID, img)
+        #     bot.send_photo(CHANNEL_ID, html, parse_mode = 'html',
+        #                  reply_markup=markup)
+        
+        # else:
+        #     bot.send_message(CHANNEL_ID, html, parse_mode = 'html',
+        #                  reply_markup=markup)
         bot.send_message(CHANNEL_ID, html, parse_mode = 'html',
                          reply_markup=markup)
         

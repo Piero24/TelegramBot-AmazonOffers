@@ -44,7 +44,7 @@
 #
 
 # Use a platform-neutral base image
-FROM python:3 AS base
+FROM python:3.9 AS base
 
 # Install required system packages
 RUN apt-get update && apt-get install -y libgl1-mesa-glx

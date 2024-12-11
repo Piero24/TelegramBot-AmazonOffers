@@ -1,0 +1,65 @@
+name: Bug Report
+description: Report a bug
+# title: "[BUG] "
+labels: ["bug"]
+assignees: ["Piero24"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out the sections below to help everyone identify and fix the bug
+
+  - type: dropdown
+    id: utilization-on
+    attributes:
+      label: "Which installation method have you chosen?"
+      options:
+        - "Docker"
+        - "Python Virtual Environment (venv)"
+        
+  - type: input
+    id: sw-version
+    attributes:
+      label: What version of the software are you using?
+    validations:
+      required: true
+
+  - type: input
+    id: os-version
+    attributes:
+      label: What operating system are you using (Name and Version)?
+    validations:
+      required: true
+
+  - type: input
+    id: browser-version
+    attributes:
+      label: What browser are you using (Name and Version)?
+      description: Skip if the problem is not related to the webpage
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe your issue
+      description: Screenshots are welcome, but please provide a detailed description and format your code properly
+      placeholder: When I click here this happens ...
+    validations:
+      required: true
+  
+  - type: textarea
+    id: steps
+    attributes:
+      label: Describe the steps to reproduce the issue
+      description: Please provide a detailed description and format your code properly
+      placeholder: |
+        1. Added the categories 'A', 'B' and 'C'
+        2. Modified the category 'A'
+        3. etc..
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: "To speed up the resolution of the issue, please provide the logs file." 
+      description: You can find it in the logs folder.

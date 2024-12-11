@@ -1,0 +1,46 @@
+name: Question
+description: Ask a question about the software
+labels: ["question"]
+assignees: ["Piero24"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out the sections below to help us better understand your question.
+
+  - type: dropdown
+    id: utilization-on
+    attributes:
+      label: "Which installation method have you chosen?"
+      options:
+        - "Docker"
+        - "Python Virtual Environment (venv)"
+        
+  - type: input
+    id: sw-version
+    attributes:
+      label: What version of the software are you using?
+    validations:
+      required: true
+
+  - type: input
+    id: os-version
+    attributes:
+      label: What operating system are you using (Name and Version)?
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe your question
+      description: Screenshots are welcome, but please provide a detailed description and format your code properly
+      placeholder: |
+        I want to know if there is a way to ...
+    validations:
+      required: true
+  
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your question! We will try to answer it as soon as possible.
