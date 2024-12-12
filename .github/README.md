@@ -53,12 +53,13 @@
 
 ---
 
-<h3 align="center">
-    📌 NOTE 📌 
-</h3>
-<p align="center">
-    The images in this readme are the result of further customization of this bot. In fact, as explained below, it is possible to customize various aspects of the product such as the image or title but this depends a lot on the result you want to obtain. For example, to personalize images, the use of an image storage system is required. However, the default version is more than sufficient to use the bot fully.
-</p>
+> [!NOTE]  
+> The images in this readme are the result of further customization of this bot. In fact, as explained below, it is possible to customize various aspects of the product such as the image or title but this depends a lot on the result you want to obtain. For example, to personalize images, the use of an image storage system is required. However, the default version is more than sufficient to use the bot fully.
+
+> [!IMPORTANT]  
+> Your support is essential for the success of this project. If you find it valuable, please consider showing your appreciation by starring the project on GitHub. Thank you! [![GitHub Stars](https://img.shields.io/github/stars/Piero24/TelegramBot-AmazonOffers.svg?style=social)](https://github.com/Piero24/TelegramBot-AmazonOffers)
+
+
 
 <br/><br/>
 <h2 id="introduction">📔  Introduction</h2>
