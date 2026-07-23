@@ -6,7 +6,7 @@ holidays==0.40
 idna==3.6
 numpy==1.26.3
 opencv-python==4.9.0.80
-Pillow==9.5.0
+Pillow==12.3.0
 pyTelegramBotAPI==4.14.1
 python-amazon-paapi==5.0.1
 python-dateutil==2.8.2
