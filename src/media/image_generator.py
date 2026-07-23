@@ -95,7 +95,7 @@ def gen_img(
     new_height = int(new_width / aspect_ratio)
 
     # Resize the image maintaining the aspect ratio
-    im1_resized = im1.resize((new_width, new_height), Image.ANTIALIAS)
+    im1_resized = im1.resize((new_width, new_height), Image.Resampling.LANCZOS)
 
     # Apre l'immagine di background
     im3 = Image.open(f'src/media/template/backg-{img_number}.jpg')
@@ -128,8 +128,10 @@ def gen_img(
     # For drawings and writing on pictures
     draw = ImageDraw.Draw(back_im)
     # Get the size of the writings to be inserted in the files
-    w1, h1 = draw.textsize(f"{old_price}{old_currency}", font=font1)
-    w2, h2 = draw.textsize(f"{new_price}{currency}", font=font2)
+    bbox1 = draw.textbbox((0, 0), f"{old_price}{old_currency}", font=font1)
+    w1, h1 = bbox1[2] - bbox1[0], bbox1[3] - bbox1[1]
+    bbox2 = draw.textbbox((0, 0), f"{new_price}{currency}", font=font2)
+    w2, h2 = bbox2[2] - bbox2[0], bbox2[3] - bbox2[1]
 
     if old_price is not None:
 
